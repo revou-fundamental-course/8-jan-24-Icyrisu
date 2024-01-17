@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Kartik Persegi</title>
-</head>
-<body>
-    <header>
-        <h1>Kalkulator Luas dan Keliling Persegi</h1>
-        <h4>Welcome to Kalkulator Luas dan Keliling Persegi</h4>
-        <p>Web ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan min project Revou</p>
-    </header>
+    <link rel="stylesheet" href="/8-jan-24-Icyrisu/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+    <title>Kalkulator Bangun Datar</title>
+  </head>
 
-    <div class="inputSection">
-        <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi</label>
-        <input type="number" id="squareSide">
+  <body>
+ 
+    <div class="box">
+
+      <header>
+        <span>Kalkulator Bangun Datar</span>
+      </header>
+
+      <main class="top">
+        <p><b>Selamat Datang di Kalkulator Persegi</b></p>
+        <p><i>Ini adalah web sederhana untuk menghitung luas dan keliling persegi</i></p>
+        <div class="square"></div>
+      </main>
+
+      <main class="bot">
+        <form id="squareForm">
+          <div class="input">
+            <label for="sideLength">Panjang Sisi:</label>
+            <input type="number" id="sideLength" required>
+            <br>
+            <button type="button" onclick="calculate()">Hitung</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+          </div>
+          <div id="result"></div>
+      </form>
+      </main>
+   
+      <footer>
+        <span>by <b>Icyris</b></span>
+      </footer>
+      
     </div>
-    <div class="buttons">
-        <button class="katikButton">Hitung</button>
-        <button class="katikButton">Reset</button>
-    </div>
-</body>
+    <script src="/8-jan-24-Icyrisu/js/script.js"></script>
+
+  </body>
 </html>
